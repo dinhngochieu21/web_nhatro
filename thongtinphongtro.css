@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 14px;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.col {
+    padding-top: 1rem;
+}
+
+.col .pro_price {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f50!important;
+}
+
+.col p {
+    width: 100%;
+    float: left;
+    line-height: 10px;
+}
+
+.col .pro_acreage {
+    width: 300px;
+    float: left;
+}
+
+.col span {
+    color: #888;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100px;
+    font-weight: 400;
+}
+
+#myCarousel.carousel.slide {
+    width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+}
