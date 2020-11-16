@@ -8,6 +8,10 @@ body {
     min-width: 1000px;
 }
 
+.row {
+    margin: auto;
+}
+
 .col {
     padding-top: 1rem;
 }
