@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css\dangnhap.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title"> Đăng Nhập </div>
+        <div class="form-group">
+            <a href="#" class="btn btn-primary btn-block ">
+                <i class="fab fa-facebook-f"></i> Đăng nhập bằng tài khoản Facebook </a>
+        </div>
+        <div class="form-group">
+            <a href="#" class="btn btn-danger btn-block">
+                <i class="fab fa-google text-white"></i> Đăng nhập bằng tài khoản Google </a>
+            </button>
+        </div>
+        <div class="text-center"> Hoặc </div>
+        <form class="login" action="#">
+            <div class="form-group"> <input placeholder="Email*" name="user_email" type="text" id="user_email" class="form-control"> </div>
+            <div class="form-group"> <input placeholder="Mật khẩu*" name="user_pass" type="password" id="user_pass" class="form-control"> </div>
+            <div class="item_message">
+                <p class="message text-danger"></p>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Ghi nhớ mật khẩu
+                </label>
+                <a href="#" title="Quên mật khẩu" class="float-right" id="hplForgotPass">Quên mật khẩu ?</a>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="action" value="login">
+                <button class="btnLogin btn btn-warning btn-block btn-lg text-white" type="submit">Đăng nhập</button>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+    <div class="container border-0">
+        <div class="form-text">
+            <p> Chưa có tài khoản? </p>
+        </div>
+        <div class="form-group">
+            <a href="dangky.html" class="btn btn-outline-dark btn-block font-weight-bold">ĐĂNG KÍ NGAY</a></div>
+    </div>
+    <script src="js\dangnhap.js"></script>
+</body>
+
+</html>
