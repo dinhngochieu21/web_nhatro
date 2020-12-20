@@ -12,6 +12,7 @@
     <script src="\js\respond.js"></script>
 
     <link rel="stylesheet" href="css\thongtinphongtro.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
@@ -219,7 +220,88 @@
             </dl>
         </div>
         <div class="line"></div>
-    </div>
+        <h3>ĐÁNH GIÁ - BÌNH LUẬN</h3>
+        <div class="comments">
+            <div class="tab_label"><span>Có <strong>1</strong> bình luận, đánh giá</span> <strong>về bài đăng</strong>
+
+            </div>
+
+            <div id="_info_comment" class="cls">
+
+                <div class="_contents">
+                    <div class="_item 931 _level_0 _sub_0">
+                        <article itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <p class="clearfix cls" itemprop="author" itemtype="http://schema.org/Person">
+                                <span class="_avatar">H</span>
+                                <span class="_name" itemprop="name">huy</span>
+                            </p>
+                            <div class="_wrap">
+                                <p class="_content " itemprop="description"> good</p>
+                                <div class="_control "><a class="button_reply" href="javascript: void(0)">Trả lời</a>
+                                    <span class="dot">.</span><time itemprop="datePublished" content="2020-12-19 22:33" datetime="2020-12-19 22:33" title="2020-12-19 22:33">14 giờ trước</time></div>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="_item 930 _level_0 _sub_0">
+                        <article itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <p class="clearfix cls" itemprop="author" itemtype="http://schema.org/Person">
+                                <span class="_avatar">G</span>
+                                <span class="_name" itemprop="name">Giáp</span>
+                            </p>
+                            <div class="_wrap">
+                                <p class="_content " itemprop="description"> hay</p>
+                                <div class="_control "><a class="button_reply" href="javascript: void(0)">Trả lời</a>
+                                    <span class="dot">.</span><time itemprop="datePublished" content="2020-12-19 21:56" datetime="2020-12-19 21:56" title="2020-12-19 21:56">15 giờ trước</time></div>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <form action="javascript:void(0);" method="post" name="comment_add_form" id="comment_add_form" class="form_comment cls" onsubmit="javascript: submit_comment();return false;">
+                <label class="label_form">Nhận xét và đánh giá</label>
+                <div id="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+
+                </div>
+                <span class="rating_note">Nhấn vào đây để đánh giá</span>
+                <div class="_textarea">
+                    <textarea name="content" id="cmt_content" placeholder="Viết bình luận của bạn..."></textarea>
+                </div>
+
+                <input type="button" class="btn-comment-mb" value="Gửi bình luận">
+                <input type="hidden" value="comments" name="module">
+                <input type="hidden" value="comments" name="view">
+                <input type="hidden" value="news" name="type" id="_cmt_type">
+
+                <input type="hidden" value="18462" name="record_id" id="record_id">
+                <input type="hidden" value="news" name="_cmt_module" id="_cmt_module">
+                <input type="hidden" value="news" name="_cmt_view" id="_cmt_view">
+                <input type="hidden" value="save_comment" name="task">
+                <input type="hidden" value="18462" name="record_id" id="_cmt_record_id">
+                <input type="hidden" value="" name="return" id="_cmt_return">
+                <input type="hidden" value="/index.php?module=comments&amp;view=comments&amp;type=news&amp;task=save_comment&amp;raw=1" name="return" id="link_reply_form">
+            </form>
+            <script type="text/javascript" src="js\thongtinphongtro.js"></script>
+            <div class="line"></div>
+        </div>
 </body>
 
 </html>
