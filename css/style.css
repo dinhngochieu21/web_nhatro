@@ -1,7 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 100%;   
+    max-height: 100%;
 }
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .right-content, .left-content {
+        width: 100%;
+    }
+  }
 
 body {
     
@@ -22,7 +31,11 @@ ul {
 }
 
 .header {
-    
+   
+    background-color: #ddd;
+    width: 100%;
+    z-index: 999;
+    padding: 10px;
 }
 
 .box-logo {
@@ -31,8 +44,8 @@ ul {
 
 .box-logo img {
     width: 200px;
-    height: 100px;
-   
+    height: 60px;
+   overflow: hidden;
     
 }
 
@@ -41,6 +54,8 @@ ul {
     float: left;
     width: auto;
 }
+
+
 
 .header-menu li {
     padding: 10px;
@@ -61,7 +76,7 @@ ul {
     border-bottom: 2px solid;
 }
 
-.header-user {
+ .header-user {
     
     float: right;
 }
@@ -70,13 +85,20 @@ ul {
     padding: 10px;
 }
 
-.header-post {
-    float: right;
-    margin-top: 6px;
-    height: 34px;
+.header-user li a {
+    line-height: 28px;
+    padding: 5px 5px 0 5px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0 8px;
 }
 
-.btn-post {
+.header-user li.span {
+    padding: 0px;
+}
+
+ .btn-post {
     background: #5488c7;
     color: #fff!important;
     padding: 7px 15px 7px 15px;
@@ -85,28 +107,10 @@ ul {
     font-size: 14px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
-.header-user-login {
-    float: right;
-    margin-right: 15px;
-}
 
-.header-user-login a{
-    display: block;
-    float: right;
-    line-height: 40px;
-    font-size: 14px;
-    color: #0054a0;
-}
-
-.header-user-login span {
-    float: right;
-    padding: 0 10px;
-    line-height: 40px;
-    font-size: 16px;
-}
 
 
 .clear {
@@ -116,6 +120,7 @@ ul {
 .menu {
     background-color: #0054a0;
     padding: 0px 20px;
+    margin-top: 100px;
 }
 
 .menu li {
@@ -140,8 +145,11 @@ ul {
 }
 
 .search-bar {
-    padding: 20px;
-    background-color: red;
+    padding: 20px 0px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(/img/index_search_bg.jpg);
+    background-repeat: no-repeat;
     
 }
 
@@ -150,6 +158,7 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    margin: auto;
 }
 
 .search_title{
@@ -160,6 +169,109 @@ ul {
 }
 
 .search_wrap {
-    display: flex;
+
 }
 
+.search_form {
+    width: 80%;
+    border-right: 1px white solid;
+}
+
+.its_submit {
+    color: #fff;
+    height: 42px;
+    width: 112px;
+   
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 6px;
+    background: #5488c7;
+    border-color: #5488c7;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.filter_form {
+    
+    
+}
+
+.filter_form form {
+  
+}
+
+.dropbtn {
+    background-color:rgb(156, 154, 154);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    width: 100%;
+    margin: 5px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    border-radius: 5px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  .content {
+      width: 80%;
+      margin: auto;
+  }
+ 
+
+  ul .room_post_list {
+    list-style: none;
+}
+
+.room_post {
+    width: 100%;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+
+.room_post .room_post_img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.room_post_content .price {
+    float: right;
+    color: red;
+    font-weight: bolder;
+}
