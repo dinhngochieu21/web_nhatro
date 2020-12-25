@@ -2,6 +2,22 @@ body {
     font-family: 'Open Sans', Tahoma, Arial, sans-serif;
 }
 
+.header-top {
+    background: #ffffff;
+    ;
+    color: #FFF;
+    height: 70px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.pull-left {
+    float: left;
+}
+
 #id_back_top {
     width: 100%;
     height: 65px;
