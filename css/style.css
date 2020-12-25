@@ -4,6 +4,11 @@ body {font-family: 'Open Sans', Tahoma, Arial, sans-serif;}
     background: #ffffff;;
     color: #FFF;
     height: 70px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
 }
 
 .pull-left {
