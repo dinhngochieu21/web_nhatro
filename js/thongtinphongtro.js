@@ -6,7 +6,7 @@ function load_ajax_pagination($value) {
         }, 'slow');
     });
 }
-display_hidden_comment_form();
+
 
 function display_hidden_comment_form() {
     $('.button_reply').click(function() {
@@ -44,8 +44,18 @@ function off_popup(element) {
     $('.btn-comment-mb-rep').parent().find('.wrap_r').removeClass('display-open');
 }
 
+//Hiện *
 function calcRate(r) {
     const f = ~~r, //Tương tự Math.floor(r)
         id = 'star' + f + (r % f ? 'half' : '')
     id && (document.getElementById(id).checked = !0)
+}
+
+//popup report
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
 }

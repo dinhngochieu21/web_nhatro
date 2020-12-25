@@ -3,69 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thue nha tao di</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container1">
-        <div class="header">
-            <div class="box-logo">
-                <a href=""><img src="img/logo.png" alt="logo"></a>
-            </div>
-            
-            <ul class="header-menu">
-                <li class="active" ><a href="">CHO THUÊ</a></li>
-                <LI><a href="">MUA BÁN</a></LI>
-                <li><a href="">DỰ ÁN</a></li>
-                <li><a href="">CẦN THUÊ</a></li>
-                <li><a href="">TIN TỨC</a></li>
-            </ul>
-            
-            <ul class="header-user">
-                <li class="header-post"><a href="" class="btn-post"><i></i>Đăng tin</a></li>
-                <li class="header-user-login"><a href="">Đăng nhập</a><span>/</span> <a href="">Đăng kí</a></li>
-                
-            </ul>
-            
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-        <div class="menu">
-            <ul>
-                <li class="li_home"><a href="">Trang chủ</a></li>
-                <li class="li_tro"><a href="">Phòng trọ</a></li>
-                <li class="li_house"><a href="">Nhà nguyên căn</a></li>
-                <li class="li_apartment"><a href="">Chung cư</a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-        <div class="search-bar">
-            <div class="search_container">
-                <div class="search_title">
-                    <h2>Tìm nhà cho thuê</h2>
-                    <h5>với hơn 500 tin</h5>
-                </div>
-                <div class="search_wrap">
-                    <div class="search_form">
-                        <div class="search-text">Tìm nhanh theo từ khóa</div>
-                        <form action="">
-                            <input type="text" placeholder="Nhập thông tin nơi cần thuê" name="search">
-                            <button type="submit"><i class="fas fa-search"></i> Tìm kiếm</button>
-                        </form>
+    <header id="header" class="header-top ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <a class="logo" href="http://phongtot.vn"><img class="img-responsive" src="http://phongtot.vn/themes/client/img/phongtot_logo.png"></a>
                     </div>
-                    <div class="filter_form"></div>
+                    <div class="pull-right">
+                                        <div class="header-top-avatar"><img class="img-responsive" src="http://phongtot.vn/themes/client/img/avatar.png"></div>
+                        <div class="header-top-user">
+                            <div class="user-login"><a class="load_modal_login" href="#tab_auth_login" data-toggle="modal" data-target="#modal_auth">Đăng nhập</a></div>
+                                                    <div class="user-register load_modal_register"><a href="javascript: void(0);" data-toggle="modal" data-target="#modal_auth">Tạo tài khoản</a></div>
+                                                </div>
+                                    </div>
+                    <div class="pull-right">
+                                        <a class="btn btn-submit-room load_modal_login" data-toggle="modal" data-target="#modal_auth" href="javascript: void(0);">Đăng tin miễn phí</a>
+                                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="left-content">
-                <div class="hot-post"></div>
-                <div class="exp-post"></div>
-            </div>
-            <div class="right-content"></div>
+    </header>
+    <div class="clearfix"></div>
+    
+    
+
+ <!-- slider -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark searchbar " style="margin:24px 0;">
+  <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+      <a class="nav-link" href="#">Phongf trọ</a>
+    </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Địa điểm
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
         </div>
-        <div class="footer"></div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Loại phòng
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Giá
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        
+      <input class="form-control mr-sm-2 ipSeacrh" type="text" placeholder="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </div>
+</nav>
+                    
+<!-- end slider -->
+
+<div class="content row">
+    <div class="left-content col-9">
+        <div class="hot-post">
+            <div class="hot-post_title">
+                Tin nổi bật
+            </div>
+            <div class="hot-post_content row">
+                <div class="hot-room col">
+                    <div class="new-room-img">
+                        <a href=""><img src="img/new_room.jpg" alt=""></a>
+            
+                    </div>
+                    <div class="basic-info">
+                        <a href="">Bán căn 3 phòng ngủ 2 vệ sinh 77m2 chỉ 1,7 tỷ tại quận nam ...</a>
+                        <p>Price</p>
+                    </div>
+                    
+                </div>
+                <div class="hot-room col">
+                    <div class="new-room-img">
+                        <a href=""><img src="img/new_room.jpg" alt=""></a>
+            
+                    </div>
+                    <div class="basic-info">
+                        <a href="">Bán căn 3 phòng ngủ 2 vệ sinh 77m2 chỉ 1,7 tỷ tại quận nam ...</a>
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div class="hot-room col">
+                    <div class="new-room-img">
+                        <a href=""><img src="img/new_room.jpg" alt=""></a>
+            
+                    </div>
+                    <div class="basic-info">
+                        <a href="">Bán căn 3 phòng ngủ 2 vệ sinh 77m2 chỉ 1,7 tỷ tại quận nam ...</a>
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div class="hot-room col">
+                    <div class="new-room-img">
+                        <a href=""><img src="img/new_room.jpg" alt=""></a>
+            
+                    </div>
+                    <div class="basic-info">
+                        <a href="">Bán căn 3 phòng ngủ 2 vệ sinh 77m2 chỉ 1,7 tỷ tại quận nam ...</a>
+                        <p>Price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exp-post">
+            <ul class="room_post_list">
+                <li class="room_post rp1">
+                    <div class="room_post_img">
+                        <a href=""><img src="img/room_post1.jpg" alt=""></a>
+                    </div>
+                    <div class="room_post_content">
+                        <p class="price"><span>32 Triệu</span></p>
+                        <h3 class="title"><a href="">DỰ ÁN VEN BIỂN CÓ SỔ NGAY CHÍNH SÁCH TỐT GIÁ CHỈ 4.2TR/M2 - Thao Nguyen</a></h3>
+                        
+                        <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - 
+                            trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, 
+                            sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi tiện ích 
+                            và kết nối với mọi tiện nghi
+                        </div>
+                        <div class="info1">
+                            Địa chỉ :
+                        </div>
+                        <div class="info2">
+                            Địa chỉ :
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="room_post rp1">
+                    <div class="room_post_img">
+                        <a href=""><img src="img/room_post1.jpg" alt=""></a>
+                    </div>
+                    <div class="room_post_content">
+                        <p class="price"><span>32 Triệu</span></p>
+                        <h3 class="title"><a href="">DỰ ÁN VEN BIỂN CÓ SỔ NGAY CHÍNH SÁCH TỐT GIÁ CHỈ 4.2TR/M2 - Thao Nguyen</a></h3>
+                        
+                        <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - 
+                            trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, 
+                            sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi tiện ích 
+                            và kết nối với mọi tiện nghi
+                        </div>
+                        <div class="info1">
+                            Địa chỉ :
+                        </div>
+                        <div class="info2">
+                            Địa chỉ :
+                        </div>
+                    </div><div class="clear"></div>
+                </li>
+                <li class="room_post rp1">
+                    <div class="room_post_img">
+                        <a href=""><img src="img/room_post1.jpg" alt=""></a>
+                    </div>
+                    <div class="room_post_content">
+                        <p class="price"><span>32 Triệu</span></p>
+                        <h3 class="title"><a href="">DỰ ÁN VEN BIỂN CÓ SỔ NGAY CHÍNH SÁCH TỐT GIÁ CHỈ 4.2TR/M2 - Thao Nguyen</a></h3>
+                        
+                        <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - 
+                            trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, 
+                            sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi tiện ích 
+                            và kết nối với mọi tiện nghi
+                        </div>
+                        <div class="info1">
+                            Địa chỉ :
+                        </div>
+                        <div class="info2">
+                            Địa chỉ :
+                        </div>
+                    </div><div class="clear"></div>
+                </li>
+                <li class="room_post rp1">
+                    <div class="room_post_img">
+                        <a href=""><img src="img/room_post1.jpg" alt=""></a>
+                    </div>
+                    <div class="room_post_content">
+                        <p class="price"><span>32 Triệu</span></p>
+                        <h3 class="title"><a href="">DỰ ÁN VEN BIỂN CÓ SỔ NGAY CHÍNH SÁCH TỐT GIÁ CHỈ 4.2TR/M2 - Thao Nguyen</a></h3>
+                        
+                        <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - 
+                            trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, 
+                            sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi tiện ích 
+                            và kết nối với mọi tiện nghi
+                        </div>
+                        <div class="info1">
+                            Địa chỉ :
+                        </div>
+                        <div class="info2">
+                            Địa chỉ :
+                        </div>
+                    </div><div class="clear"></div>
+                </li>
+                <li class="room_post rp1">
+                    <div class="room_post_img">
+                        <a href=""><img src="img/room_post1.jpg" alt=""></a>
+                    </div>
+                    <div class="room_post_content">
+                        <p class="price"><span>32 Triệu</span></p>
+                        <h3 class="title"><a href="">DỰ ÁN VEN BIỂN CÓ SỔ NGAY CHÍNH SÁCH TỐT GIÁ CHỈ 4.2TR/M2 - Thao Nguyen</a></h3>
+                        
+                        <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - 
+                            trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, 
+                            sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi tiện ích 
+                            và kết nối với mọi tiện nghi
+                        </div>
+                        <div class="info1">
+                            Địa chỉ :
+                        </div>
+                        <div class="info2">
+                            Địa chỉ :
+                        </div>
+                    </div><div class="clear"></div>
+                </li>
+            </ul>
+        </div>
     </div>
+    <div class="right-content col-3">
+        <div class="right_title">
+            <h3>Tin noi bat</h3>
+        </div>
+        <ul class="right_room_list">
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+            <li class="rr_post">
+                <a href="" class="img"><img src="img/anh_1.jpg" alt=""></a>
+                <a href="" class="title">Nguyên căn cho thuê, 54 đg 3 p. tăng nhơn phú b quận 9 - ...</a>
+                <p class="price">5 trieeuj</p>
+            </li>
+        </ul>
+    </div>
+</div>
+ <!-- Start footer -->
+ 
 </body>
 </html>
+
+

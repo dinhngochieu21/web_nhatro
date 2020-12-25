@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body 
+{
+    width: 100%;
+    margin: auto;
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+}
+
+footer .row {
+    margin: auto;
+}
+
+.icon_list {
+    overflow: hidden;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.logo_footer {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.logo_footer img {
+    width: 72%;
+    height: 100%;
+}
+
+.upper_footer {
+   border: 1px solid rgb(204, 193, 193);
+}

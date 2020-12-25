@@ -29,10 +29,27 @@
                 <div class="breadcrumb-item" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
                     <a itemprop="url" href="#"> <span itemprop="title">Cho thuê chung cư Quận Ba Đình</span> </a>
                 </div>
-                <div class="time ml-auto"> <span>10/11/2020, 18:33 </span> </div>
+                <div class="time ml-auto"> <span>10/12/2020, 16:08 </span> </div>
             </div>
         </div>
         <h1>2 ngủ, 80m2, full nội thất &amp; đồ điện tử, ba đình - dương thị thủy</h1>
+        <i class="fas fa-exclamation-circle" onclick="openForm()"></i>
+
+        <div class="form-popup" id="myForm">
+            <form action="#" class="form-container">
+                <h1>Report</h1>
+                <select name="cars" class="custom-select mb-3">
+                    <option selected>Chọn lý do</option>
+                    <option value="a1">Phòng không tồn tại</option>
+                    <option value="a2">Thông tin không đúng</option>
+                  </select>
+                <label for="text"><b>Lý do khác:</b></label>
+                <input type="text" name="text">
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
         <div class="row">
             <p class="tieu_chi_tk"> Tiêu chí tìm kiếm: <a href="#">Chung cư Quận Ba Đình</a> </p>
         </div>
@@ -195,11 +212,7 @@
                 <a class="btn btn-primary item_btn" href="javascript: void(0)" data="">  Chia sẻ </a>
 
             </div>
-            <div class=" input-group">
-                <input class="form-control" id="article_copy_link_input" type="text" readonly value="https://">
-                <div class="input-group-addon">
-                    <button class="btn btn-danger data-clipboard-target=" #article_copy_link_input>Copy link</button></div>
-            </div>
+
         </div>
         <div class="line"></div>
         <h3>Liên hệ:</h3>
@@ -222,7 +235,7 @@
         <div class="line"></div>
         <h3>ĐÁNH GIÁ - BÌNH LUẬN</h3>
         <div class="comments">
-            <div class="tab_label"><span>Có <strong>1</strong> bình luận, đánh giá</span> <strong>về bài đăng</strong>
+            <div class="tab_label"><span>Có <strong>2</strong> bình luận, đánh giá</span> <strong>về bài đăng</strong>
 
             </div>
 
@@ -235,10 +248,14 @@
                                 <span class="_avatar">H</span>
                                 <span class="_name" itemprop="name">huy</span>
                             </p>
+                            <div class="_control ">
+                                <g-review-stars aria-hidden="true"><span class="Fam1ne tPhRLe" role="img"><span style="width:50px"></span></span>
+                                </g-review-stars>
+                                <time itemprop="datePublished" content="2020-12-19 22:33" datetime="2020-12-19 22:33" title="2020-12-19 22:33">14 giờ trước</time>
+                            </div>
                             <div class="_wrap">
                                 <p class="_content " itemprop="description"> good</p>
-                                <div class="_control "><a class="button_reply" href="javascript: void(0)">Trả lời</a>
-                                    <span class="dot">.</span><time itemprop="datePublished" content="2020-12-19 22:33" datetime="2020-12-19 22:33" title="2020-12-19 22:33">14 giờ trước</time></div>
+
 
                             </div>
                         </article>
@@ -249,11 +266,13 @@
                                 <span class="_avatar">G</span>
                                 <span class="_name" itemprop="name">Giáp</span>
                             </p>
+                            <div class="_control ">
+                                <g-review-stars aria-hidden="true"><span class="Fam1ne tPhRLe" role="img"><span style="width:65px"></span></span>
+                                </g-review-stars>
+                                <time itemprop="datePublished" content="2020-12-19 21:56" datetime="2020-12-19 21:56" title="2020-12-19 21:56">15 giờ trước</time>
+                            </div>
                             <div class="_wrap">
                                 <p class="_content " itemprop="description"> hay</p>
-                                <div class="_control "><a class="button_reply" href="javascript: void(0)">Trả lời</a>
-                                    <span class="dot">.</span><time itemprop="datePublished" content="2020-12-19 21:56" datetime="2020-12-19 21:56" title="2020-12-19 21:56">15 giờ trước</time></div>
-
                             </div>
                         </article>
                     </div>
@@ -301,6 +320,30 @@
             </form>
             <script type="text/javascript" src="js\thongtinphongtro.js"></script>
             <div class="line"></div>
+            <div id="bot">
+                <a id="top" class="back-to-top">
+                    <i class="fa fa-chevron-circle-up fa-3x"></i>
+
+            </div>
+            <script>
+                //  $('#top').hide(500);
+                $(window).on('scroll', function() {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > 0) {
+                        $('#top').show(500);
+                        //$('#top').fadeIn(500);
+                    } else {
+                        //$('#top').fadeOut(500);
+                        $('#top').hide(500);
+                    }
+                });
+
+                $('#top').on('click', function(e) {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, "slow");
+                });
+            </script>
         </div>
 </body>
 
