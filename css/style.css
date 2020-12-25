@@ -180,3 +180,6 @@ ul .room_post_list {
     color: red;
     font-weight: bold;
 }
+.clear {
+    clear: both;
+}
