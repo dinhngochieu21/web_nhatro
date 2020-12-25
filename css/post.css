@@ -11,6 +11,26 @@ a {
     text-decoration: none black;
 }
 
+.pro_post_form_top {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.pro_post_form_top .title {
+    width: 100%;
+    float: left;
+    color: #666666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pro_post_form_top a {
+    color: #0054a0;
+}
+
+
+
 .pro_post_form_left {
     width: 30%;
     float: left;
@@ -72,6 +92,15 @@ a {
     margin: 0px 40px;
 }
 
+@media screen and (max-width: 1000px) {
+    .pro_post_form_left {
+      display: none;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .item {
+        width: 100%;
+    }
+  }
 .user_form_pro {
     width: 100%;
     font-family: tahoma;
@@ -170,3 +199,15 @@ a {
     width: 50%;
     float: left;
 }
+
+
+@media screen and (max-width: 800px) {
+    .pro_post_form_left {
+      display: none;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .user_form_pro_content .item .item_sub {
+        width: 100%;
+        
+    } 
+  }
