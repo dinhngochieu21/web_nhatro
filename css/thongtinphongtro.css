@@ -1,22 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.4;
-    font-family: Arial, Helvetica, Sans-serif;
-    font-size: 15px;
+#id_back_top {
     width: 100%;
-    height: 100%;
-    min-width: 1000px;
-    position: relative;
-}
-
-.row {
-    margin: auto;
-}
-
-.col {
-    padding-top: 1rem;
+    height: 65px;
+    float: left;
 }
 
 .col .pro_price {
@@ -75,7 +60,7 @@ dl dt {
     text-align: left;
 }
 
-.container .info {
+.container .info_phong {
     margin: 0;
     padding: 0;
     text-align: left;
@@ -201,10 +186,6 @@ dd {
 
 /*reset css*/
 
-body {
-    margin: 20px;
-}
-
 h1 {
     font-size: 1.5em;
     margin: 10px;
@@ -318,7 +299,7 @@ h1 {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: 3rem;
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
@@ -398,6 +379,9 @@ h1 {
     top: 1px;
     width: 65px;
 }
+
+
+/* hiện sao */
 
 .Fam1ne {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAQAAAAYCMGrAAAA+klEQVR4AcWV4cbtMBBFF0MIVUopoVSrhDDv/3gf/RFRpzdNOty1HiBO99mzeYWgCMZMKCPGrCgrxiSUhCkDeukxJKCXAUMiehkxw6FZhxEzmp0x4kCzByYISqlYdal0supS6WrVpdLEK0YSamJiJOPY0c/uOG4s6CcXfuKJaJcRzyNCQJsNiF1sRTR1hP11NNJ8RCrONOPRf+r7J+TZgQ5CNfMOYvW/2YxDqzqA/57+gVY9eiakrnyZEGXDsaE3p/4JScwPX3rtnZATDxnPWT7X16XAHaH8HWNrlxJD9TyGti5tCM84zpZe+RxNjeX9tZqLaGoMxN/P/wHP5Vw+8ZxnEQAAAABJRU5ErkJggg==);
