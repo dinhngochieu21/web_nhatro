@@ -194,6 +194,7 @@ a {
 }
 
 .user_form_pro_content div input[type=text],
+.user_form_pro_content div input[type=number],
 .user_form_pro_content div input[type=password] {
     border: 1px solid #dfdfdf;
     padding: 5px;
