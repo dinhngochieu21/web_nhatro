@@ -196,12 +196,12 @@
               <span class="city">${item.city}</span>
            </a>
                         <span class="price">${item.price}</span>
-                        <div class="close">×</div>
+                        <div class="delete">×</div>
                     </div>
                 </li>
         `).join('')
             document.getElementById('book_mark_item').innerHTML = html
-            var deleteButtons = document.getElementsByClassName('close')
+            var deleteButtons = document.getElementsByClassName('delete')
             for (let i = 0; i < deleteButtons.length; i++) {
                 deleteButtons[i].addEventListener("click", function() {
                     remove(i)
