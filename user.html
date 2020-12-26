@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pt-breadcrumb">
+                            <ol class="breadcrumb">
+                              <li><a href="http://phongtot.vn">Trang chủ</a></li>
+                                <li class="active">Trang cá nhân</li>
+                            </ol>
+                        </div>
+
+                        <div class="user_panel col-md-2">
+                            <div class="user-avatar">
+                            <a href="#"><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a>
+                            </div>
+                            <div class="user-panel-menu">
+                                <div class="user-panel-menu-item active"><a href="">Tổng quan</a></div>
+                                <div class="user-panel-menu-item "><a href="">Tin đã đăng</a></div>
+                                <div class="user-panel-menu-item "><a href="">Tin đã lưu</a></div>
+                            </div>
+                        </div>
+                        <div class="user_panel col-md-10 user-panel-center-container">
+                            <div class="user-panel-info">
+                                <div class="user-panel-name"><a href="">Hiếu Đinh Ngọc</a></div>
+                                <div class="user-panel-email"><a href="">dinhngochieu21@gmail.com</a></div>
+                                <a class="btn btn-submit-room" href="">Đăng tin miễn phí</a>
+                            </div>
+                            <div class="user-panel-main-container">
+                            <!-- Nav tabs -->
+                                <div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Thông tin cá nhân</a></li>
+                                        <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Đổi mật khẩu</a></li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <form class="user-panel-main-container-info" method="POST" action="" enctype="multipart/form-data">
+                                                <input type="hidden" name="_token" value="mtE2sAEb06daI86XYt8j0Ma1jJqwVuiTwWOPT2eV">
+                                                <div class="user-panel-info-title">Ảnh đại diện</div>
+                                                <div class="user-avatar"><a href=""><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a></div>
+                                                <div class="user-panel-upload-avatar">
+                                                    <input type="file" name="avatar" value="">
+                                                    <span class="help-block"><div style="color:red;"></div>Kích thước ảnh tối đa 1MB.</span>
+                                                </div>
+                                                                    <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="hoten">Họ tên</label>
+                                                            <input type="text" class="form-control" name="fullname" value="" placeholder="Họ tên">
+                                                            <span class="help-block" style="color:red;"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="ngaysinh">Ngày sinh</label>
+                                                            <input type="text" class="form-control" name="birth" value="" placeholder="dd/mm/yyyy">
+                                                            <span class="help-block" style="color:red;"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="ngaysinh">Giới tính</label>
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="gender" id="inlineRadio1" value="male"> Nam
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                            <input type="radio" name="gender" id="inlineRadio2" value="female"> Nữ
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Địa chỉ</label>
+                                                            <input type="text" class="form-control" name="address" value="" placeholder="Địa chỉ">
+                                                            <span class="help-block" style="color:red;"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Điện thoại liên hệ</label>
+                                                            <input type="text" class="form-control" name="phone" value="" placeholder="Phone">
+                                                            <span class="help-block" style="color:red;"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-actions">
+                                                    <button type="submit" class="btn center-block">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane " id="profile">
+                                            <form class="user-panel-main-container-info" method="POST" action="" enctype="multipart/form-data">
+                                            <input type="hidden" name="_token" value="mtE2sAEb06daI86XYt8j0Ma1jJqwVuiTwWOPT2eV">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Mật khẩu cũ</label>
+                                                <input type="password" class="form-control" name="oldpassword" placeholder="Mật khẩu cũ">
+                                                <span class="help-block" style="color:red;"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Mật khẩu mới</label>
+                                                <input type="password" class="form-control" name="password" placeholder="Mật khẩu mới">
+                                                <span class="help-block" style="color:red;"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Nhập lại mật khẩu</label>
+                                                <input type="password" class="form-control" name="repassword" placeholder="Nhập lại mật khẩu">
+                                                <span class="help-block" style="color:red;"></span>
+                                            </div>
+                                            <button type="submit" class="btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
