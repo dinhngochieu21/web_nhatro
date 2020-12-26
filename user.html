@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/user.css">
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
+
 <body>
-    <div class="container">
+    <div id="id_back_top"></div>
+    <div id="header"></div>
+    <div class="container mt-2">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="pt-breadcrumb">
-                            <ol class="breadcrumb">
-                              <li><a href="http://phongtot.vn">Trang chủ</a></li>
-                                <li class="active">Trang cá nhân</li>
-                            </ol>
+                        <div class="breadcrumb">
+                            <div class="breadcrumb-item" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+                                <a itemprop="url" href="#"> <span itemprop="title">Trang chủ</span> </a>
+                            </div>
+                            <div class="breadcrumb-item" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+                                <a itemprop="url" href="#"> <span itemprop="title">Trang cá nhân</span> </a>
+                            </div>
                         </div>
 
                         <div class="user_panel col-md-2">
                             <div class="user-avatar">
-                            <a href="#"><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a>
+                                <a href="#"><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a>
                             </div>
                             <div class="user-panel-menu">
                                 <div class="user-panel-menu-item active"><a href="">Tổng quan</a></div>
@@ -40,7 +52,7 @@
                                 <a class="btn btn-submit-room" href="">Đăng tin miễn phí</a>
                             </div>
                             <div class="user-panel-main-container">
-                            <!-- Nav tabs -->
+                                <!-- Nav tabs -->
                                 <div class="card">
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Thông tin cá nhân</a></li>
@@ -52,12 +64,14 @@
                                             <form class="user-panel-main-container-info" method="POST" action="" enctype="multipart/form-data">
                                                 <input type="hidden" name="_token" value="mtE2sAEb06daI86XYt8j0Ma1jJqwVuiTwWOPT2eV">
                                                 <div class="user-panel-info-title">Ảnh đại diện</div>
-                                                <div class="user-avatar"><a href=""><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a></div>
+                                                <div class="user-avatar">
+                                                    <a href=""><img class="img-responsive" src="https://lh3.googleusercontent.com/--Qr-slAKxi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckChqOvRByHf0v_98yly5WbXjP0pQ/s50/photo.jpg"></a>
+                                                </div>
                                                 <div class="user-panel-upload-avatar">
                                                     <input type="file" name="avatar" value="">
                                                     <span class="help-block"><div style="color:red;"></div>Kích thước ảnh tối đa 1MB.</span>
                                                 </div>
-                                                                    <div class="row">
+                                                <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="hoten">Họ tên</label>
@@ -99,23 +113,23 @@
                                         </div>
                                         <div role="tabpanel" class="tab-pane " id="profile">
                                             <form class="user-panel-main-container-info" method="POST" action="" enctype="multipart/form-data">
-                                            <input type="hidden" name="_token" value="mtE2sAEb06daI86XYt8j0Ma1jJqwVuiTwWOPT2eV">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Mật khẩu cũ</label>
-                                                <input type="password" class="form-control" name="oldpassword" placeholder="Mật khẩu cũ">
-                                                <span class="help-block" style="color:red;"></span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Mật khẩu mới</label>
-                                                <input type="password" class="form-control" name="password" placeholder="Mật khẩu mới">
-                                                <span class="help-block" style="color:red;"></span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1">Nhập lại mật khẩu</label>
-                                                <input type="password" class="form-control" name="repassword" placeholder="Nhập lại mật khẩu">
-                                                <span class="help-block" style="color:red;"></span>
-                                            </div>
-                                            <button type="submit" class="btn">Submit</button>
+                                                <input type="hidden" name="_token" value="mtE2sAEb06daI86XYt8j0Ma1jJqwVuiTwWOPT2eV">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Mật khẩu cũ</label>
+                                                    <input type="password" class="form-control" name="oldpassword" placeholder="Mật khẩu cũ">
+                                                    <span class="help-block" style="color:red;"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Mật khẩu mới</label>
+                                                    <input type="password" class="form-control" name="password" placeholder="Mật khẩu mới">
+                                                    <span class="help-block" style="color:red;"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">Nhập lại mật khẩu</label>
+                                                    <input type="password" class="form-control" name="repassword" placeholder="Nhập lại mật khẩu">
+                                                    <span class="help-block" style="color:red;"></span>
+                                                </div>
+                                                <button type="submit" class="btn">Submit</button>
                                             </form>
                                         </div>
                                     </div>
@@ -127,5 +141,7 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
+
 </html>

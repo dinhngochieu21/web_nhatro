@@ -11,11 +11,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css\dangnhap.css">
-
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div class="container">
+    <div id="id_back_top"></div>
+    <div id="header"></div>
+    <div class="login_form">
         <div class="title"> Đăng Nhập </div>
         <div class="form-group">
             <a href="#" class="btn btn-primary btn-block ">
@@ -46,13 +53,14 @@
             <div class="clear"></div>
         </form>
     </div>
-    <div class="container border-0">
+    <div class="login_form border-0">
         <div class="form-text">
             <p> Chưa có tài khoản? </p>
         </div>
         <div class="form-group">
             <a href="dangky.html" class="btn btn-outline-dark btn-block font-weight-bold">ĐĂNG KÍ NGAY</a></div>
     </div>
+    <div id="footer"></div>
     <script src="js\dangnhap.js"></script>
 </body>
 

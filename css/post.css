@@ -1,6 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    font-family: 'Open Sans', Tahoma, Arial, sans-serif;
+}
+
+#id_back_top {
+    width: 100%;
+    height: 65px;
+    float: left;
+}
+
+#header {
+    height: 65px;
+}
+
+.main {
+    width: 100%;
+    display: -webkit-box;
+}
+
+section {
+    margin: 15px auto;
 }
 
 ul {
@@ -29,12 +47,11 @@ a {
     color: #0054a0;
 }
 
-
-
 .pro_post_form_left {
     width: 30%;
     float: left;
 }
+
 .pro_post_form_help {
     width: 100%;
     float: left;
@@ -94,22 +111,25 @@ a {
 
 @media screen and (max-width: 1000px) {
     .pro_post_form_left {
-      display: none;/* The width is 100%, when the viewport is 800px or smaller */
+        display: none;
+        /* The width is 100%, when the viewport is 800px or smaller */
     }
-
     .item {
         width: 100%;
     }
-  }
+}
+
 .user_form_pro {
     width: 100%;
     font-family: tahoma;
 }
+
 .user_form_pro .user_form_pro_content {
     width: 100%;
     padding: 0px 0px 30px 0px;
     background: #fff;
 }
+
 .form_item {
     width: 100%;
     float: left;
@@ -129,6 +149,7 @@ a {
     line-height: 36px;
     min-height: 10px;
 }
+
 .item_input_image {
     width: 100%;
     float: left;
@@ -172,7 +193,8 @@ a {
     padding-left: 100px;
 }
 
-.user_form_pro_content div input[type=text], .user_form_pro_content div input[type=password] {
+.user_form_pro_content div input[type=text],
+.user_form_pro_content div input[type=password] {
     border: 1px solid #dfdfdf;
     padding: 5px;
     width: 100%;
@@ -186,6 +208,7 @@ a {
     height: 68px;
     float: left;
 }
+
 .module_title {
     width: 100%;
     float: left;
@@ -195,6 +218,7 @@ a {
     line-height: 26px;
     text-transform: uppercase;
 }
+
 .user_form_pro_content .item .item_sub {
     width: 50%;
     float: left;
@@ -204,14 +228,12 @@ a {
     width: 150px;
 }
 
-
 @media screen and (max-width: 800px) {
     .pro_post_form_left {
-      display: none;/* The width is 100%, when the viewport is 800px or smaller */
+        display: none;
+        /* The width is 100%, when the viewport is 800px or smaller */
     }
-
     .user_form_pro_content .item .item_sub {
         width: 100%;
-        
-    } 
-  }
+    }
+}
