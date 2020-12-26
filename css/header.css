@@ -178,7 +178,7 @@ p {
 }
 
 .header_book_mark_list .arrow {
-    background: url(/img/arrow_top.png) no-repeat scroll 0 0 transparent;
+    background: url(/web_nhatro/img/arrow_top.png) no-repeat scroll 0 0 transparent;
     height: 8px;
     right: 86px;
     position: absolute;
