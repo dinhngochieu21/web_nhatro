@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="\js\respond.js"></script>
+    <script src="js\respond.js"></script>
 
     <link rel="stylesheet" href="css\thongtinphongtro.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
@@ -20,6 +20,7 @@
             $("#footer").load("footer.html");
         });
     </script>
+    <script src="js/save.js"></script>
 </head>
 
 <body>
@@ -216,9 +217,9 @@
             <div class="social_content article_share content">
                 <span class="font-weight-bold">Chia sẻ tin đăng đến bạn bè</span>
                 <div class="my-2">
-                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data=""> <i class="fa fa-heart"></i> Lưu tin </a>
-                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data=""> <i class="fas fa-thumbs-up"></i> Thích </a>
-                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data="">  Chia sẻ </a>
+                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data="" id="save" onclick="add()"> <i class="fa fa-heart"></i> Lưu tin </a>
+                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data="" id="like"> <i class="fas fa-thumbs-up"></i> Thích </a>
+                    <a class="btn btn-primary item_btn" href="javascript: void(0)" data="" id="share">  Chia sẻ </a>
 
                 </div>
 
@@ -333,6 +334,7 @@
         </div>
     </div>
     <div id="footer"></div>
+   
 </body>
 
 </html>

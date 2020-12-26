@@ -95,3 +95,18 @@ ul .room_post_list {
 .clear {
     clear: both;
 }
+
+.hot-room {
+    height: 300px;
+}
+
+.new-room-img {
+    height: 60%;
+    width: 100%;
+}
+
+.new-room-img img {
+    width: 100%;
+    height: 100%;
+    
+}
