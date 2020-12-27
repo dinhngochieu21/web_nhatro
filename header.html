@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css\header.css">
-    
+    <script src="js/save.js"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="pull-left">
+                    <div class="pull-left ">
                         <a class="logo" href="index.html"><img class="img-responsive" src="img\logo thue tro.png">EasyAccomod</a>
                     </div>
                     <div class="pull-right">
@@ -28,12 +28,10 @@
                             <div class="user-register load_modal_register"><a href="javascript: void(0);" data-toggle="modal" data-target="#modal_auth">Đăng ký</a></div>
                         </div>
                     </div>
-                    <div class="header_book_mark_content">
+                    <div class="header_book_mark_content ">
                         <a class="header_book_mark" href="javascript: void(0)"> <i class="fa fa-heart" onclick="openSave()"></i> </a>
-                        <script >
-                            document.getElementsById("mySave").addEventListener('click', openSave);
-                        </script>
-                        <div class="header_book_mark_list" id="mySave">
+                        
+                        <div class="header_book_mark_list" id="mySave" >
                             <span class="arrow"></span>
                             <p class="notify_header">Tin đã lưu</p>
                             <div class="header_book_mark_list_content">
@@ -43,16 +41,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pull-right">
+                    <div class="pull-right ">
                         <a class="btn btn-submit-room load_modal_login" data-toggle="modal" data-target="#modal_auth" href="javascript: void(0);">Đăng tin</a>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            
-        </script>
     </header>
+    
 </body>
 
 </html>

@@ -10,10 +10,10 @@ const items = [{
 
 }]
 
-
+items.splice(0, 1);
 
 function add() {
-
+        
 
         items.push({
             name: 'Flc green home 18 phạm hùng 78m² 3 phòng ngủ full đồ đẹp - cho thuê chung cư cao cấp',
