@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -30,8 +30,10 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html"><span class="fas fa-home"></span></a>
             </div>
-
-            <div class="container collapse navbar-collapse" id="navb">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Phòng trọ</a>
@@ -41,35 +43,36 @@
           Địa điểm
         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                            <a class="dropdown-item" href="#">Thái Bình</a>
+                            <a class="dropdown-item" href="#">Nam Định</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="room-type" data-toggle="dropdown">
           Loại phòng
         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="#"> dự án</a>
+                            <a class="dropdown-item" href="#">1 - 2 triệu</a>
+                            <a class="dropdown-item" href="#">2 - 3 triệu</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="price" data-toggle="dropdown">
           Giá
         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            
+                            <a class="dropdown-item" href="#"> 1 triệu</a>
+                            <a class="dropdown-item" href="#">1 - 2 triệu</a>
+                            <a class="dropdown-item" href="#">2 - 3 triệu</a>
                         </div>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
 
-                    <input class="form-control mr-sm-2 ipSeacrh" type="text" placeholder="Search">
+                    <input class="form-control mr-sm-2 " type="text" id="myInput" placeholder="Search">
                     <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
                 </form>
             </div>
@@ -94,6 +97,7 @@
                         <div class="basic-info">
                             <a href="">Bán căn 3 phòng ngủ 2 vệ sinh 77m2 chỉ 1,7 tỷ tại quận nam ...</a>
                             <p>Price</p>
+                            
                         </div>
 
                     </div>
