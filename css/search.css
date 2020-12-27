@@ -57,6 +57,13 @@ a {
     z-index: 1;
 }
 
+.box-body .item span {
+    color: aliceblue;
+}
+
+.box-body .item span:hover {
+    color: rgb(213, 238, 238);
+}
 
 /* .item {
     background-size: cover;
