@@ -3,14 +3,11 @@ function openSave() {
                 popup.classList.toggle("show");
 }
 const items = [{
-    name: 'Flc green home 18 phạm hùng 78m² 3 phòng ngủ full đồ đẹp - cho thuê chung cư cao cấp',
-    city: '- Quận Nam Từ Liêm',
-    price: '10,000,000 đ',
-    image: 'img' + '/' + 'quantam_1.jpg',
+    
 
 }]
 
-items.splice(0, 1);
+
 
 function add() {
         
@@ -48,13 +45,20 @@ function render() {
             <div class="delete">×</div>
         </div>
     </li>
-`).join('')
-    document.getElementById('book_mark_item').innerHTML = html
-    var deleteButtons = $('.delete')
-    for (let i = 0; i < deleteButtons.length; i++) {
-        deleteButtons[i].addEventListener("click", function() {
-            remove(i)
-        })
+`)
+
+    if(html === ''){
+        document.getElementById('book_mark_item').innerHTML = "Chưa lưu phòng";
+        
+    }
+    else {
+        document.getElementById('book_mark_item').innerHTML = html;
+        var deleteButtons = $('.delete');
+        for (let i = 0; i < deleteButtons.length; i++) {
+            deleteButtons[i].addEventListener("click", function() {
+                remove(i)
+            })
+    }
     }
 };
 

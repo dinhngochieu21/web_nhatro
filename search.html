@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search.css">
-
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css”>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -37,25 +37,43 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class=" collapse navbar-collapse" id="collapsibleNavbar">
-               
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control" list="places" name="places" id="place" placeholder="Địa điểm">
-                    <datalist id="places">
-                        <option value="Tất cả">
-                        <option value="Hà Nội">
-                        <option value="Tp. Hồ Chí Minh">
-                        <option value="Huế">
-                        <option value="Đà Nẵng">
-                    </datalist>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Phòng trọ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Địa điểm
+        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                            <a class="dropdown-item" href="#">Thái Bình</a>
+                            <a class="dropdown-item" href="#">Nam Định</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="room-type" data-toggle="dropdown">
+          Loại phòng
+        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"> dự án</a>
+                            <a class="dropdown-item" href="#">1 - 2 triệu</a>
+                            <a class="dropdown-item" href="#">2 - 3 triệu</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="price" data-toggle="dropdown">
+          Giá
+        </a>
+                        <div class="dropdown-menu">
 
-                    <input class="form-control" list="prices" name="price" id="price" placeholder="Giá">
-                    <datalist id="prices">
-                        <option value="Tất cả">
-                        <option value="Hà Nội">
-                        <option value="Tp. Hồ Chí Minh">
-                        <option value="Huế">
-                        <option value="Đà Nẵng">
-                    </datalist>
+                            <a class="dropdown-item" href="#"> 1 triệu</a>
+                            <a class="dropdown-item" href="#">1 - 2 triệu</a>
+                            <a class="dropdown-item" href="#">2 - 3 triệu</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
 
                     <input class="form-control mr-sm-2 " type="text" id="myInput" placeholder="Search">
                     <button class="btn btn-success my-2 my-sm-0" type="button" id="search-btn">Search</button>
@@ -135,10 +153,10 @@
                             </div>
                             <div class="room_post_content">
                                 <p class="price"><span>32 Triệu</span></p>
-                                <h3 class="title"><a href="">bom asd</a></h3>
+                                <h3 class="title"><a href="">bom </a></h3>
 
                                 <div class="intro">- với giá 4.2tr/m2 sỡ hưu ngay lô dt 200m2 - đường dây điện âm - trục đường 50m nối về biển hải ninh - mặt tiền đường ql1a - hạ tầng hoàn thiện, sổ đỏ có ngay - nằm ngay trung tâm hành chính huyện mới - vị trí liền kề mọi
-                                    tiện ích và kết nối với mọi tiện nghi
+                                    tiện ích và kết nối với mọi hà nội
                                 </div>
                                 <div class="info1">
                                     Địa chỉ :
