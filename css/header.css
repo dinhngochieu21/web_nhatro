@@ -6,13 +6,6 @@ div {
     vertical-align: baseline;
 }
 
-header.show {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .show {
     display: block;
 }
@@ -178,7 +171,7 @@ p {
 }
 
 .header_book_mark_list .arrow {
-    background: url(/web_nhatro/img/arrow_top.png) no-repeat scroll 0 0 transparent;
+    background: url(../img/arrow_top.png) no-repeat scroll 0 0 transparent;
     height: 8px;
     right: 86px;
     position: absolute;
